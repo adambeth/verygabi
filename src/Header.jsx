@@ -1,5 +1,9 @@
 import { NavButtons } from "./NavButtons";
 
+import PropTypes from "prop-types";
+Header.propTypes = {
+  setDisplayed: PropTypes.func.isRequired,
+};
 export function Header({ setDisplayed }) {
   return (
     <>
