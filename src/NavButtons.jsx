@@ -1,19 +1,15 @@
-import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
-export function NavButtons({ setDisplayed }) {
+export function NavButtons() {
   return (
     <>
       <nav>
         {" "}
-        <a onClick={() => setDisplayed("price")}>Prices</a>
-        <a onClick={() => setDisplayed("book")}>Booking</a>
-        <a onClick={() => setDisplayed("gallery")}>Gallery</a>
-        <a onClick={() => setDisplayed("contact")}>Contact</a>
+        <Link to="/prices">Prices</Link>
+        <Link to="/bookings">Booking</Link>
+        <a>Gallery</a>
+        <a>Contact</a>
       </nav>
     </>
   );
 }
-
-NavButtons.propTypes = {
-  setDisplayed: PropTypes.func.isRequired,
-};

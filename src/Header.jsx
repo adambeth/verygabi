@@ -1,11 +1,11 @@
 import { NavButtons } from "./NavButtons";
 
-export function Header({ setDisplayed }) {
+export function Header() {
   return (
     <>
       <div className="header">
-        <h1>💅🏻 VERYGABI! 💅🏻</h1>
-        <NavButtons className="nav" setDisplayed={setDisplayed} />
+        <h1>💅🏻 VERYGABI 💅🏻</h1>
+        <NavButtons className="nav" />
       </div>
     </>
   );

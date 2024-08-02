@@ -5,3 +5,4 @@ export function Setmore() {
     </>
   );
 }
+export default Setmore;
