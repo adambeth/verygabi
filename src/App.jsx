@@ -1,20 +1,14 @@
 import "./App.css";
-import { Box } from "./Box";
-import { Header } from "./Header";
-import { Prices } from "./Prices";
-import { useState } from "react";
-import { Setmore } from "./Setmore";
-// investigate routing -https://reactrouter.com/en/main
-// https://tanstack.com/router/latest/docs/framework/react/quick-start
+import { Box } from "./components/Box";
+import { Header } from "./components/Header";
+import { Outlet } from "react-router-dom";
 //session storage
 function App() {
-  const [displayed, setDisplayed] = useState("price");
   return (
     <>
-      <Header setDisplayed={setDisplayed} />
+      <Header />
       <Box>
-        {displayed === "price" && <Prices />}
-        {displayed == "book" && <Setmore />}
+        <Outlet />
       </Box>
     </>
   );
