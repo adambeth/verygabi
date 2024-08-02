@@ -10,6 +10,7 @@ import Setmore from "./Setmore";
 
 const routes = createRoutesFromElements(
   <Route path="/" element={<App />}>
+    <Route path="/verygabi" element={<Prices />} />
     <Route index element={<></>} />
     <Route path="/prices" element={<Prices />} />
     <Route path="/bookings" element={<Setmore />} />
